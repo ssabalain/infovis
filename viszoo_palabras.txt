@@ -1,0 +1,14 @@
+visual encodings
+stream graph
+small multiples
+brushing-and-linking
+Parallel Coordinates
+Choropleth Maps
+Graduated Symbol Maps
+Node-link diagrams
+dendrogram
+Adjacency Diagrams
+Force-directed Layouts
+Arc Diagrams
+seriation
+
