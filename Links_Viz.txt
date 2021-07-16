@@ -1,0 +1,7 @@
+#Analisis de nacimientos en USA, usando Tableau
+https://ssabalain.github.io/infovis/birthday_dashboard.html
+
+#Poblacion por provincia y departamento, usando Fluorish
+https://ssabalain.github.io/infovis/deptos_censo_viz.html
+
+
