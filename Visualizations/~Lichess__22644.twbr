@@ -1,0 +1,1996 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20203.20.1110.1623                               -->
+<workbook source-build='2020.3.3 (20203.20.1110.1623)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <_.fcp.SetMembershipControl.true...SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='basic-csv-wdc.herokuapp.com' inline='true' name='federated.0mopdcl1frq4tj14sieo50ku9ldi' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='basic-csv-wdc.herokuapp.com' name='webdata-direct.002trbu02sr8en122z1eh1w7mxvy'>
+            <connection ACCESSTOKEN='' APIVersion='' CLIENTID='' CLIENTSECRET='' REDIRECT_URI='' REFRESHTOKEN='' SCOPE='' access-token-expires-in='' access-token-issue-time='' authType='none' authentication='no' channel='https' class='webdata-direct' connectionData='{&quot;dataUrl&quot;:&quot;https://ssabalain.github.io/infovis/Datasets/lichess_OzymandiasS_Games.csv&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;delimiter&quot;:&quot;&quot;,&quot;mode&quot;:&quot;loosetyped&quot;}' filename='' id-token='' increment-key='' oauth-client='' path='/' port='443' scriptVersion='' secondary_whitelist='' server='basic-csv-wdc.herokuapp.com' urlQuery='' username='' usernameAlias='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='webdata-direct.002trbu02sr8en122z1eh1w7mxvy' name='CSV Data' table='[csvData]' type='table'>
+          <columns>
+            <column datatype='date' date-parse-format='yyyy.MM.dd' name='Date' />
+            <column datatype='datetime' date-parse-format='HH:mm:ss' name='UTCTime' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='webdata-direct.002trbu02sr8en122z1eh1w7mxvy' name='CSV Data' table='[csvData]' type='table'>
+          <columns>
+            <column datatype='date' date-parse-format='yyyy.MM.dd' name='Date' />
+            <column datatype='datetime' date-parse-format='HH:mm:ss' name='UTCTime' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Event</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[Event]</local-name>
+            <parent-name>[CSV Data]</parent-name>
+            <remote-alias>Event</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;string&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Site</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[Site]</local-name>
+            <parent-name>[CSV Data]</parent-name>
+            <remote-alias>Site</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;string&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[CSV Data]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>White</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[White]</local-name>
+            <parent-name>[CSV Data]</parent-name>
+            <remote-alias>White</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;string&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Black</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[Black]</local-name>
+            <parent-name>[CSV Data]</parent-name>
+            <remote-alias>Black</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;string&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Result</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[Result]</local-name>
+            <parent-name>[CSV Data]</parent-name>
+            <remote-alias>Result</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;string&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UTCDate</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[UTCDate]</local-name>
+            <parent-name>[CSV Data]</parent-name>
+            <remote-alias>UTCDate</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;string&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UTCTime</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[UTCTime]</local-name>
+            <parent-name>[CSV Data]</parent-name>
+            <remote-alias>UTCTime</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;string&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WhiteElo</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[WhiteElo]</local-name>
+            <parent-name>[CSV Data]</parent-name>
+            <remote-alias>WhiteElo</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;int&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BlackElo</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[BlackElo]</local-name>
+            <parent-name>[CSV Data]</parent-name>
+            <remote-alias>BlackElo</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;int&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WhiteRatingDiff</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[WhiteRatingDiff]</local-name>
+            <parent-name>[CSV Data]</parent-name>
+            <remote-alias>WhiteRatingDiff</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;int&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BlackRatingDiff</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[BlackRatingDiff]</local-name>
+            <parent-name>[CSV Data]</parent-name>
+            <remote-alias>BlackRatingDiff</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;int&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Variant</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[Variant]</local-name>
+            <parent-name>[CSV Data]</parent-name>
+            <remote-alias>Variant</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;string&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TimeControl</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[TimeControl]</local-name>
+            <parent-name>[CSV Data]</parent-name>
+            <remote-alias>TimeControl</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;string&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ECO</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[ECO]</local-name>
+            <parent-name>[CSV Data]</parent-name>
+            <remote-alias>ECO</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;string&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Termination</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[Termination]</local-name>
+            <parent-name>[CSV Data]</parent-name>
+            <remote-alias>Termination</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;string&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Moves</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[Moves]</local-name>
+            <parent-name>[CSV Data]</parent-name>
+            <remote-alias>Moves</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;string&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WhiteFirstMove</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[WhiteFirstMove]</local-name>
+            <parent-name>[CSV Data]</parent-name>
+            <remote-alias>WhiteFirstMove</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;string&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BlackFirstMove</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[BlackFirstMove]</local-name>
+            <parent-name>[CSV Data]</parent-name>
+            <remote-alias>BlackFirstMove</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;string&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MyResult</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[MyResult]</local-name>
+            <parent-name>[CSV Data]</parent-name>
+            <remote-alias>MyResult</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;string&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MyFirstMove</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[MyFirstMove]</local-name>
+            <parent-name>[CSV Data]</parent-name>
+            <remote-alias>MyFirstMove</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;string&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MyElo</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[MyElo]</local-name>
+            <parent-name>[CSV Data]</parent-name>
+            <remote-alias>MyElo</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;int&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MyOpponentsElo</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[MyOpponentsElo]</local-name>
+            <parent-name>[CSV Data]</parent-name>
+            <remote-alias>MyOpponentsElo</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;int&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Measure Names' datatype='string' name='[:Measure Names]' role='dimension' type='nominal' />
+      <column caption='Black Elo' datatype='integer' name='[BlackElo]' role='measure' type='quantitative' />
+      <column caption='Black First Move' datatype='string' name='[BlackFirstMove]' role='dimension' type='nominal' />
+      <column caption='Black Rating Diff' datatype='integer' name='[BlackRatingDiff]' role='measure' type='quantitative' />
+      <column caption='Win Ratio' datatype='real' default-format='p0.00%' name='[Calculation_1593429909070802946]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Calculation_1593429909073498115]/COUNT([__tableau_internal_object_id__].[csvData_606AA56BD6C84E788BE5FDE1ED3219C3])' />
+      </column>
+      <column caption='Wins' datatype='integer' name='[Calculation_1593429909073498115]' role='measure' type='ordinal'>
+        <calculation class='tableau' formula='COUNT(IF  [MyResult (copy)_1593429909069942785] = &quot;Win&quot; THEN  [Site] END)' />
+      </column>
+      <column caption='X-Letter' datatype='string' name='[Calculation_1593429909082296327]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='LEFT(RIGHT([MyFirstMove],2),1)' />
+      </column>
+      <column aggregation='Sum' caption='X' datatype='real' name='[Calculation_1593429909087399947]' role='dimension' type='quantitative'>
+        <calculation class='tableau' formula='FLOAT(IF [Calculation_1593429909082296327] = &quot;a&quot; THEN&#13;&#10;    0.5&#13;&#10;ELSEIF [Calculation_1593429909082296327] = &quot;b&quot; THEN&#13;&#10;    1.5&#13;&#10;ELSEIF [Calculation_1593429909082296327] = &quot;c&quot; THEN&#13;&#10;    2.5&#13;&#10;ELSEIF [Calculation_1593429909082296327] = &quot;d&quot; THEN&#13;&#10;    3.5&#13;&#10;ELSEIF [Calculation_1593429909082296327] = &quot;e&quot; THEN&#13;&#10;    4.5&#13;&#10;ELSEIF [Calculation_1593429909082296327] = &quot;f&quot; THEN&#13;&#10;    5.5&#13;&#10;ELSEIF [Calculation_1593429909082296327] = &quot;g&quot; THEN&#13;&#10;    6.5&#13;&#10;ELSEIF [Calculation_1593429909082296327] = &quot;h&quot; THEN 7.5&#13;&#10;END)' />
+      </column>
+      <column caption='Y' datatype='real' datatype-customized='true' name='[Calculation_1593429909088317452]' role='dimension' type='quantitative'>
+        <calculation class='tableau' formula='FLOAT(RIGHT([MyFirstMove],1))-0.5' />
+      </column>
+      <column caption='ImPlayingWith' datatype='string' name='[Calculation_1593429909127667726]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF ([Black] = &quot;OzymandiasS&quot;) THEN  &quot;Black&quot;&#13;&#10;ElSE  &quot;White&quot; END' />
+      </column>
+      <column caption='CSV Data ISNULL' datatype='integer' name='[Calculation_1593429909142822927]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IFNULL(COUNT([__tableau_internal_object_id__].[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]),0)' />
+      </column>
+      <column datatype='date' datatype-customized='true' name='[Date]' role='dimension' type='ordinal' />
+      <column caption='Measure Values' datatype='real' name='[Multiple Values]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='MyElo (dim)' datatype='integer' name='[MyElo (copy)_1593429909124874253]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='[MyElo]' />
+      </column>
+      <column datatype='integer' name='[MyElo]' role='measure' type='quantitative' />
+      <column aggregation='None' caption='Puntaje ELO del oponente' datatype='integer' name='[MyOpponentsElo (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='1' formula='[MyOpponentsElo]' peg='0' size='15' />
+      </column>
+      <column datatype='integer' name='[MyOpponentsElo]' role='measure' type='quantitative' />
+      <column aggregation='CountD' caption='MyResult (dim)' datatype='string' name='[MyResult (copy)_1593429909069942785]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[MyResult]' />
+      </column>
+      <column aggregation='CountD' datatype='string' default-role='measure' default-type='quantitative' name='[MyResult]' role='dimension' type='nominal' />
+      <column aggregation='CountD' datatype='string' default-role='measure' default-type='quantitative' name='[Site]' role='dimension' type='nominal' />
+      <column caption='Time Control' datatype='string' name='[TimeControl]' role='dimension' type='nominal' />
+      <column caption='UTC Date' datatype='string' name='[UTCDate]' role='dimension' type='nominal' />
+      <column caption='UTC Time' datatype='datetime' datatype-customized='true' name='[UTCTime]' role='dimension' type='ordinal' />
+      <column caption='White Elo' datatype='integer' name='[WhiteElo]' role='measure' type='quantitative' />
+      <column caption='White First Move' datatype='string' name='[WhiteFirstMove]' role='dimension' type='nominal' />
+      <column caption='White Rating Diff' datatype='integer' name='[WhiteRatingDiff]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='CSV Data' datatype='table' name='[__tableau_internal_object_id__].[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:csvData_606AA56BD6C84E788BE5FDE1ED3219C3:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[UTCTime]' derivation='Hour' name='[hr:UTCTime:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[MyElo]' derivation='Max' name='[max:MyElo:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1593429909127667726]' derivation='None' name='[none:Calculation_1593429909127667726:nk]' pivot='key' type='nominal' />
+      <column-instance column='[MyOpponentsElo (bin)]' derivation='None' name='[none:MyOpponentsElo (bin):ok]' pivot='key' type='ordinal' />
+      <column-instance column='[MyResult (copy)_1593429909069942785]' derivation='None' name='[none:MyResult (copy)_1593429909069942785:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Date]' derivation='Day-Trunc' name='[tdy:Date:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Calculation_1593429909070802946]' derivation='User' name='[usr:Calculation_1593429909070802946:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1593429909073498115]' derivation='User' name='[usr:Calculation_1593429909073498115:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Date]' derivation='Weekday' name='[wd:Date:ok]' pivot='key' type='ordinal' />
+      <group caption='Action (DAY(Date))' hidden='true' name='[Action (DAY(Date))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[tdy:Date:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (WEEKDAY(Date),HOUR(UTC Time))' hidden='true' name='[Action (WEEKDAY(Date),HOUR(UTC Time))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[wd:Date:ok]' />
+          <groupfilter function='level-members' level='[hr:UTCTime:ok]' />
+        </groupfilter>
+      </group>
+      <mapped-images>
+        <mapped-image caption='chess_board' expression='file:///C:/Users/BairesDev/Desktop/Santi/Personal/Courses/ITBA/7_Visualizacion_de_la_Informacion/infovis/infovis/Datasets/chess_board.png' name='[MappedImage1]'>
+          <mapping bottom='0.0' left='0.0' right='8.0' top='8.0' x='[Calculation_1593429909087399947]' y='[Calculation_1593429909088317452]' />
+          <image-options desaturate-image='true' desaturate-pct='0.54' />
+        </mapped-image>
+        <mapped-image caption='chess_board_Croped' expression='file:///C:/Users/BairesDev/Desktop/Santi/Personal/Courses/ITBA/7_Visualizacion_de_la_Informacion/infovis/infovis/Datasets/chess_board_Croped.png' name='[MappedImage2]'>
+          <mapping bottom='0.0' left='0.0' right='8.0' top='8.0' x='[Calculation_1593429909087399947]' y='[Calculation_1593429909088317452]' />
+          <image-options desaturate-image='true' desaturate-pct='0.6' />
+        </mapped-image>
+      </mapped-images>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/BairesDev/Documents/My Tableau Repository/Datasources/federated.0mopdcl1frq4tj14sieo50ku9ldi_0xlenm31brsc2w1a10b5y1ry99sx.hyper' default-settings='yes' schema='Extract' sslmode='' update-time='07/19/2021 03:25:16 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table'>
+            <columns>
+              <column datatype='datetime' date-parse-format='HH:mm:ss' name='UTCTime' />
+            </columns>
+          </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table'>
+            <columns>
+              <column datatype='datetime' date-parse-format='HH:mm:ss' name='UTCTime' />
+            </columns>
+          </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+          <refresh>
+            <refresh-event add-from-file-path='basic-csv-wdc.herokuapp.com' increment-value='%null%' refresh-type='create' rows-inserted='3973' timestamp-start='2021-07-19 15:25:16.695' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Event</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Event]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Event</remote-alias>
+              <ordinal>0</ordinal>
+              <family>CSV Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Site</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Site]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Site</remote-alias>
+              <ordinal>1</ordinal>
+              <family>CSV Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3973</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>2</ordinal>
+              <family>CSV Data</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>367</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>White</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[White]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>White</remote-alias>
+              <ordinal>3</ordinal>
+              <family>CSV Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1636</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Black</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Black]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Black</remote-alias>
+              <ordinal>4</ordinal>
+              <family>CSV Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1491</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Result</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Result]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Result</remote-alias>
+              <ordinal>5</ordinal>
+              <family>CSV Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>UTCDate</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[UTCDate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>UTCDate</remote-alias>
+              <ordinal>6</ordinal>
+              <family>CSV Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>367</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>UTCTime</remote-name>
+              <remote-type>7</remote-type>
+              <local-name>[UTCTime]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>UTCTime</remote-alias>
+              <ordinal>7</ordinal>
+              <family>CSV Data</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>WhiteElo</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[WhiteElo]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>WhiteElo</remote-alias>
+              <ordinal>8</ordinal>
+              <family>CSV Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>319</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BlackElo</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[BlackElo]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BlackElo</remote-alias>
+              <ordinal>9</ordinal>
+              <family>CSV Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>316</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>WhiteRatingDiff</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[WhiteRatingDiff]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>WhiteRatingDiff</remote-alias>
+              <ordinal>10</ordinal>
+              <family>CSV Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>41</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BlackRatingDiff</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[BlackRatingDiff]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BlackRatingDiff</remote-alias>
+              <ordinal>11</ordinal>
+              <family>CSV Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Variant</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Variant]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Variant</remote-alias>
+              <ordinal>12</ordinal>
+              <family>CSV Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TimeControl</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[TimeControl]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TimeControl</remote-alias>
+              <ordinal>13</ordinal>
+              <family>CSV Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ECO</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ECO]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ECO</remote-alias>
+              <ordinal>14</ordinal>
+              <family>CSV Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Termination</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Termination]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Termination</remote-alias>
+              <ordinal>15</ordinal>
+              <family>CSV Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Moves</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Moves]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Moves</remote-alias>
+              <ordinal>16</ordinal>
+              <family>CSV Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3973</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>WhiteFirstMove</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[WhiteFirstMove]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>WhiteFirstMove</remote-alias>
+              <ordinal>17</ordinal>
+              <family>CSV Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BlackFirstMove</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[BlackFirstMove]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BlackFirstMove</remote-alias>
+              <ordinal>18</ordinal>
+              <family>CSV Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MyResult</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[MyResult]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MyResult</remote-alias>
+              <ordinal>19</ordinal>
+              <family>CSV Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MyFirstMove</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[MyFirstMove]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MyFirstMove</remote-alias>
+              <ordinal>20</ordinal>
+              <family>CSV Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MyElo</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[MyElo]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MyElo</remote-alias>
+              <ordinal>21</ordinal>
+              <family>CSV Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>273</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MyOpponentsElo</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[MyOpponentsElo]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MyOpponentsElo</remote-alias>
+              <ordinal>22</ordinal>
+              <family>CSV Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>369</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0mopdcl1frq4tj14sieo50ku9ldi].[__tableau_internal_object_id__].[cnt:csvData_606AA56BD6C84E788BE5FDE1ED3219C3:qk]&quot;</bucket>
+            </map>
+            <map to='#55aa00'>
+              <bucket>&quot;[federated.0mopdcl1frq4tj14sieo50ku9ldi].[max:MyElo:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0mopdcl1frq4tj14sieo50ku9ldi]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0mopdcl1frq4tj14sieo50ku9ldi].[usr:Calculation_1593429909073498115:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0mopdcl1frq4tj14sieo50ku9ldi].[usr:Calculation_1593429909070802946:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_1593429909127667726:nk]' palette='tableau10_10_0' type='palette'>
+            <map to='#000000'>
+              <bucket>&quot;Black&quot;</bucket>
+            </map>
+            <map to='#ffffff'>
+              <bucket>&quot;White&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:MyResult (copy)_1593429909069942785:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Draw&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Win&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Loss&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>%null%</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_1593429909127667726:nk]&#10;[none:MyResult (copy)_1593429909069942785:nk]' palette='seattle_grays_10_0' type='palette'>
+            <map to='#010102'>
+              <multibucket>
+                <bucket>&quot;Black&quot;</bucket>
+                <bucket>&quot;Win&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#3f4041'>
+              <multibucket>
+                <bucket>&quot;Black&quot;</bucket>
+                <bucket>&quot;Loss&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#949494'>
+              <multibucket>
+                <bucket>&quot;Black&quot;</bucket>
+                <bucket>&quot;Draw&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#949494'>
+              <multibucket>
+                <bucket>&quot;White&quot;</bucket>
+                <bucket>&quot;Draw&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#d3d9e2'>
+              <multibucket>
+                <bucket>&quot;White&quot;</bucket>
+                <bucket>&quot;Loss&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#ffffff'>
+              <multibucket>
+                <bucket>&quot;White&quot;</bucket>
+                <bucket>&quot;Win&quot;</bucket>
+              </multibucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:MyOpponentsElo (bin):ok]' palette='red_10_0' type='palette'>
+            <map to='#24693d'>
+              <bucket>105</bucket>
+            </map>
+            <map to='#2d7e42'>
+              <bucket>106</bucket>
+            </map>
+            <map to='#45924e'>
+              <bucket>107</bucket>
+            </map>
+            <map to='#5ea656'>
+              <bucket>108</bucket>
+            </map>
+            <map to='#73ba67'>
+              <bucket>109</bucket>
+            </map>
+            <map to='#8bcf7d'>
+              <bucket>110</bucket>
+            </map>
+            <map to='#ae123a'>
+              <bucket>125</bucket>
+            </map>
+            <map to='#b7163a'>
+              <bucket>124</bucket>
+            </map>
+            <map to='#c11a3b'>
+              <bucket>123</bucket>
+            </map>
+            <map to='#c9213c'>
+              <bucket>122</bucket>
+            </map>
+            <map to='#ced7c3'>
+              <bucket>111</bucket>
+            </map>
+            <map to='#ced7c3'>
+              <bucket>112</bucket>
+            </map>
+            <map to='#d2283d'>
+              <bucket>121</bucket>
+            </map>
+            <map to='#d9303f'>
+              <bucket>120</bucket>
+            </map>
+            <map to='#e03841'>
+              <bucket>119</bucket>
+            </map>
+            <map to='#e54244'>
+              <bucket>118</bucket>
+            </map>
+            <map to='#eb4c48'>
+              <bucket>117</bucket>
+            </map>
+            <map to='#ee574c'>
+              <bucket>116</bucket>
+            </map>
+            <map to='#f8816b'>
+              <bucket>114</bucket>
+            </map>
+            <map to='#f8816b'>
+              <bucket>115</bucket>
+            </map>
+            <map to='#fc9e8c'>
+              <bucket>113</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Argentina&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='CSV Data' id='csvData_606AA56BD6C84E788BE5FDE1ED3219C3'>
+            <properties context=''>
+              <relation connection='webdata-direct.002trbu02sr8en122z1eh1w7mxvy' name='CSV Data' table='[csvData]' type='table'>
+                <columns>
+                  <column datatype='date' date-parse-format='yyyy.MM.dd' name='Date' />
+                  <column datatype='datetime' date-parse-format='HH:mm:ss' name='UTCTime' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table'>
+                <columns>
+                  <column datatype='datetime' date-parse-format='HH:mm:ss' name='UTCTime' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Aperturas &amp; ratio'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='16'>   Aperturas mas comunes y su ratio</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='basic-csv-wdc.herokuapp.com' name='federated.0mopdcl1frq4tj14sieo50ku9ldi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0mopdcl1frq4tj14sieo50ku9ldi'>
+            <column datatype='string' name='[Black]' role='dimension' type='nominal' />
+            <column caption='X-Letter' datatype='string' name='[Calculation_1593429909082296327]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='LEFT(RIGHT([MyFirstMove],2),1)' />
+            </column>
+            <column aggregation='Sum' caption='X' datatype='real' name='[Calculation_1593429909087399947]' role='dimension' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT(IF [Calculation_1593429909082296327] = &quot;a&quot; THEN&#13;&#10;    0.5&#13;&#10;ELSEIF [Calculation_1593429909082296327] = &quot;b&quot; THEN&#13;&#10;    1.5&#13;&#10;ELSEIF [Calculation_1593429909082296327] = &quot;c&quot; THEN&#13;&#10;    2.5&#13;&#10;ELSEIF [Calculation_1593429909082296327] = &quot;d&quot; THEN&#13;&#10;    3.5&#13;&#10;ELSEIF [Calculation_1593429909082296327] = &quot;e&quot; THEN&#13;&#10;    4.5&#13;&#10;ELSEIF [Calculation_1593429909082296327] = &quot;f&quot; THEN&#13;&#10;    5.5&#13;&#10;ELSEIF [Calculation_1593429909082296327] = &quot;g&quot; THEN&#13;&#10;    6.5&#13;&#10;ELSEIF [Calculation_1593429909082296327] = &quot;h&quot; THEN 7.5&#13;&#10;END)' />
+            </column>
+            <column caption='Y' datatype='real' datatype-customized='true' name='[Calculation_1593429909088317452]' role='dimension' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT(RIGHT([MyFirstMove],1))-0.5' />
+            </column>
+            <column caption='ImPlayingWith' datatype='string' name='[Calculation_1593429909127667726]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF ([Black] = &quot;OzymandiasS&quot;) THEN  &quot;Black&quot;&#13;&#10;ElSE  &quot;White&quot; END' />
+            </column>
+            <column datatype='string' name='[Moves]' role='dimension' type='nominal' />
+            <column datatype='string' name='[MyFirstMove]' role='dimension' type='nominal' />
+            <column aggregation='CountD' caption='MyResult (dim)' datatype='string' name='[MyResult (copy)_1593429909069942785]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[MyResult]' />
+            </column>
+            <column aggregation='CountD' datatype='string' default-role='measure' default-type='quantitative' name='[MyResult]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='CSV Data' datatype='integer' name='[__tableau_internal_object_id__].[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:csvData_606AA56BD6C84E788BE5FDE1ED3219C3:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='CSV Data' datatype='table' name='[__tableau_internal_object_id__].[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1593429909087399947]' derivation='None' name='[none:Calculation_1593429909087399947:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1593429909088317452]' derivation='None' name='[none:Calculation_1593429909088317452:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1593429909127667726]' derivation='None' name='[none:Calculation_1593429909127667726:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Moves]' derivation='None' name='[none:Moves:nk]' pivot='key' type='nominal' />
+            <column-instance column='[MyResult (copy)_1593429909069942785]' derivation='None' name='[none:MyResult (copy)_1593429909069942785:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[__tableau_internal_object_id__].[cnt:csvData_606AA56BD6C84E788BE5FDE1ED3219C3:qk]' included-values='in-range'>
+            <min>20</min>
+          </filter>
+          <filter class='categorical' column='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[none:Moves:nk]'>
+            <groupfilter from='&quot;1. a3 d5 2. c4 e6 3. e3 dxc4 4. Bxc4 Nf6 5. Nc3 Be7 6. Ba2 O-O 7. b3 Nc6 8. Bb2 Bd7 9. Qc2 Re8 10. Bb1 g6 11. Nce2 a5 12. Qc3 b5 13. g4 b4 14. axb4 axb4 15. Qc4 Rxa1 16. Bxa1 Na5 17. Qc2 Bb5 18. Qb2 Qd5 19. g5 Qxg5 20. Nf3 Qg4 21. Ne5 Qg5 22. Rg1 Qh5 23. Rg2 Qxe2\# 0-1&quot;' function='range' level='[none:Moves:nk]' to='&quot;1. Nf3 Nf6 2. g3 d6 3. Bg2 e5 4. O-O Be7 5. e4 O-O 6. d3 Be6 7. c3 Nbd7 8. b3 c6 9. Bb2 Qc7 10. Nbd2 Rfe8 11. c4 Bf8 12. Rb1 g6 13. Re1 Bg7 14. Qe2 Rad8 15. d4 exd4 16. Nxd4 d5 17. Nxe6 fxe6 18. exd5 exd5 19. cxd5 Rxe2 20. Rxe2 cxd5 21. Rbe1 Qc2 22. Bxf6 Nxf6 23. Nf3 Qc5 24. Ng5 h6 25. Ne6 Qa3 26. Nxd8 Kh7 27. Re7 Qxa2 28. Nf7 Kg8 29. g4 Qxb3 30. g5 hxg5 31. Nxg5 b5 32. Ne6 Bh6 33. Nf4 Bxf4 34. Rxa7 Qb4 35. Ree7 Bd6 36. Rg7+ Kf8 37. Ra8+ Ne8 38. Raa7 Qc5 39. Rh7 1-0&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0mopdcl1frq4tj14sieo50ku9ldi].[none:Moves:nk]</column>
+            <column>[federated.0mopdcl1frq4tj14sieo50ku9ldi].[__tableau_internal_object_id__].[cnt:csvData_606AA56BD6C84E788BE5FDE1ED3219C3:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[none:Calculation_1593429909087399947:qk]' field-type='quantitative' max='10.829925356215826' min='-1.6209490050667203' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[none:Calculation_1593429909088317452:qk]' field-type='quantitative' max='8.3506496973733579' min='-0.32966353846830759' range-type='fixed' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[none:Calculation_1593429909088317452:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[none:Calculation_1593429909087399947:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='cell-w' value='20' />
+            <format attr='cell-h' value='20' />
+            <format attr='cell' value='20' />
+            <format attr='cell-q' value='100' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[__tableau_internal_object_id__].[cnt:csvData_606AA56BD6C84E788BE5FDE1ED3219C3:qk]' palette='red_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='cols' value='0' />
+          </style-rule>
+          <style-rule element='mapped-image'>
+            <format attr='enabled' id='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[MappedImage2]' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <size column='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[__tableau_internal_object_id__].[cnt:csvData_606AA56BD6C84E788BE5FDE1ED3219C3:qk]' />
+              <color column='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[none:Calculation_1593429909127667726:nk]' />
+              <lod column='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[__tableau_internal_object_id__].[cnt:csvData_606AA56BD6C84E788BE5FDE1ED3219C3:qk]' />
+              <color column='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[none:MyResult (copy)_1593429909069942785:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Partidas:&#9;&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0mopdcl1frq4tj14sieo50ku9ldi].[__tableau_internal_object_id__].[cnt:csvData_606AA56BD6C84E788BE5FDE1ED3219C3:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Resultado:&#9;&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0mopdcl1frq4tj14sieo50ku9ldi].[none:MyResult (copy)_1593429909069942785:nk]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='3.4364640712738037' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#555555' />
+                <format attr='has-halo' value='true' />
+                <format attr='halo-color' value='#d4d4d4' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0mopdcl1frq4tj14sieo50ku9ldi].[none:Calculation_1593429909088317452:qk]</rows>
+        <cols>[federated.0mopdcl1frq4tj14sieo50ku9ldi].[none:Calculation_1593429909087399947:qk]</cols>
+      </table>
+      <simple-id uuid='{E7BACAF3-B3F1-4F7B-97A0-63A9520BB918}' />
+    </worksheet>
+    <worksheet name='Dist. semanal'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Æ   </run>
+            <run bold='true' fontsize='16'>Distribucion semanal de partidas</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='basic-csv-wdc.herokuapp.com' name='federated.0mopdcl1frq4tj14sieo50ku9ldi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0mopdcl1frq4tj14sieo50ku9ldi'>
+            <column caption='CSV Data ISNULL' datatype='integer' name='[Calculation_1593429909142822927]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IFNULL(COUNT([__tableau_internal_object_id__].[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]),0)' />
+            </column>
+            <column datatype='date' datatype-customized='true' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Moves]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='CSV Data' datatype='integer' name='[__tableau_internal_object_id__].[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]' role='measure' type='quantitative' />
+            <column caption='UTC Time' datatype='datetime' datatype-customized='true' name='[UTCTime]' role='dimension' type='ordinal' />
+            <_.fcp.ObjectModelTableType.true...column caption='CSV Data' datatype='table' name='[__tableau_internal_object_id__].[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]' role='measure' type='quantitative' />
+            <column-instance column='[UTCTime]' derivation='Hour' name='[hr:UTCTime:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Moves]' derivation='None' name='[none:Moves:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1593429909142822927]' derivation='User' name='[usr:Calculation_1593429909142822927:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Weekday' name='[wd:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[none:Moves:nk]'>
+            <groupfilter from='&quot;1. a3 d5 2. c4 e6 3. e3 dxc4 4. Bxc4 Nf6 5. Nc3 Be7 6. Ba2 O-O 7. b3 Nc6 8. Bb2 Bd7 9. Qc2 Re8 10. Bb1 g6 11. Nce2 a5 12. Qc3 b5 13. g4 b4 14. axb4 axb4 15. Qc4 Rxa1 16. Bxa1 Na5 17. Qc2 Bb5 18. Qb2 Qd5 19. g5 Qxg5 20. Nf3 Qg4 21. Ne5 Qg5 22. Rg1 Qh5 23. Rg2 Qxe2\# 0-1&quot;' function='range' level='[none:Moves:nk]' to='&quot;1. Nf3 Nf6 2. g3 d6 3. Bg2 e5 4. O-O Be7 5. e4 O-O 6. d3 Be6 7. c3 Nbd7 8. b3 c6 9. Bb2 Qc7 10. Nbd2 Rfe8 11. c4 Bf8 12. Rb1 g6 13. Re1 Bg7 14. Qe2 Rad8 15. d4 exd4 16. Nxd4 d5 17. Nxe6 fxe6 18. exd5 exd5 19. cxd5 Rxe2 20. Rxe2 cxd5 21. Rbe1 Qc2 22. Bxf6 Nxf6 23. Nf3 Qc5 24. Ng5 h6 25. Ne6 Qa3 26. Nxd8 Kh7 27. Re7 Qxa2 28. Nf7 Kg8 29. g4 Qxb3 30. g5 hxg5 31. Nxg5 b5 32. Ne6 Bh6 33. Nf4 Bxf4 34. Rxa7 Qb4 35. Ree7 Bd6 36. Rg7+ Kf8 37. Ra8+ Ne8 38. Raa7 Qc5 39. Rh7 1-0&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[wd:Date:ok]' direction='ASC'>
+            <dictionary>
+              <bucket>2</bucket>
+              <bucket>3</bucket>
+              <bucket>4</bucket>
+              <bucket>5</bucket>
+              <bucket>6</bucket>
+              <bucket>7</bucket>
+              <bucket>1</bucket>
+            </dictionary>
+          </manual-sort>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[hr:UTCTime:ok]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[hr:UTCTime:ok]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0mopdcl1frq4tj14sieo50ku9ldi].[none:Moves:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[wd:Date:ok]' value='80' />
+            <format attr='cell-w' value='20' />
+            <format attr='cell-h' value='20' />
+            <format attr='cell' value='20' />
+            <format attr='cell-q' value='100' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[hr:UTCTime:ok]' value='ih a' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' center='40' field='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[usr:Calculation_1593429909142822927:qk]' min='0' palette='blue_teal_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[usr:Calculation_1593429909142822927:qk]' />
+              <text column='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[usr:Calculation_1593429909142822927:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Hora:&#9;&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0mopdcl1frq4tj14sieo50ku9ldi].[hr:UTCTime:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Dia de la semana:&#9;&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0mopdcl1frq4tj14sieo50ku9ldi].[wd:Date:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Partidas:&#9;&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0mopdcl1frq4tj14sieo50ku9ldi].[usr:Calculation_1593429909142822927:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.0mopdcl1frq4tj14sieo50ku9ldi].[usr:Calculation_1593429909142822927:qk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-style' value='normal' />
+                <format attr='font-weight' value='normal' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1.7999999523162842' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-mode' value='highlight' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0mopdcl1frq4tj14sieo50ku9ldi].[hr:UTCTime:ok]</rows>
+        <cols>[federated.0mopdcl1frq4tj14sieo50ku9ldi].[wd:Date:ok]</cols>
+        <show-full-range>
+          <column>[federated.0mopdcl1frq4tj14sieo50ku9ldi].[UTCTime]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{A01E234B-4353-40B6-B17A-102709073169}' />
+    </worksheet>
+    <worksheet name='Freq y rating'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='16'>   Frecuencia de juego y evolucion de puntaje</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='basic-csv-wdc.herokuapp.com' name='federated.0mopdcl1frq4tj14sieo50ku9ldi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0mopdcl1frq4tj14sieo50ku9ldi'>
+            <column caption='Win Ratio' datatype='real' default-format='p0.00%' name='[Calculation_1593429909070802946]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_1593429909073498115]/COUNT([__tableau_internal_object_id__].[csvData_606AA56BD6C84E788BE5FDE1ED3219C3])' />
+            </column>
+            <column caption='Wins' datatype='integer' name='[Calculation_1593429909073498115]' role='measure' type='ordinal'>
+              <calculation class='tableau' formula='COUNT(IF  [MyResult (copy)_1593429909069942785] = &quot;Win&quot; THEN  [Site] END)' />
+            </column>
+            <column datatype='date' datatype-customized='true' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Moves]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[MyElo]' role='measure' type='quantitative' />
+            <column aggregation='CountD' caption='MyResult (dim)' datatype='string' name='[MyResult (copy)_1593429909069942785]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[MyResult]' />
+            </column>
+            <column aggregation='CountD' datatype='string' default-role='measure' default-type='quantitative' name='[MyResult]' role='dimension' type='nominal' />
+            <column aggregation='CountD' datatype='string' default-role='measure' default-type='quantitative' name='[Site]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='CSV Data' datatype='integer' name='[__tableau_internal_object_id__].[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:csvData_606AA56BD6C84E788BE5FDE1ED3219C3:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='CSV Data' datatype='table' name='[__tableau_internal_object_id__].[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]' role='measure' type='quantitative' />
+            <column-instance column='[MyElo]' derivation='Max' name='[max:MyElo:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Moves]' derivation='None' name='[none:Moves:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date]' derivation='Day-Trunc' name='[tdy:Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1593429909070802946]' derivation='User' name='[usr:Calculation_1593429909070802946:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[none:Moves:nk]'>
+            <groupfilter from='&quot;1. a3 d5 2. c4 e6 3. e3 dxc4 4. Bxc4 Nf6 5. Nc3 Be7 6. Ba2 O-O 7. b3 Nc6 8. Bb2 Bd7 9. Qc2 Re8 10. Bb1 g6 11. Nce2 a5 12. Qc3 b5 13. g4 b4 14. axb4 axb4 15. Qc4 Rxa1 16. Bxa1 Na5 17. Qc2 Bb5 18. Qb2 Qd5 19. g5 Qxg5 20. Nf3 Qg4 21. Ne5 Qg5 22. Rg1 Qh5 23. Rg2 Qxe2\# 0-1&quot;' function='range' level='[none:Moves:nk]' to='&quot;1. Nf3 Nf6 2. g3 d6 3. Bg2 e5 4. O-O Be7 5. e4 O-O 6. d3 Be6 7. c3 Nbd7 8. b3 c6 9. Bb2 Qc7 10. Nbd2 Rfe8 11. c4 Bf8 12. Rb1 g6 13. Re1 Bg7 14. Qe2 Rad8 15. d4 exd4 16. Nxd4 d5 17. Nxe6 fxe6 18. exd5 exd5 19. cxd5 Rxe2 20. Rxe2 cxd5 21. Rbe1 Qc2 22. Bxf6 Nxf6 23. Nf3 Qc5 24. Ng5 h6 25. Ne6 Qa3 26. Nxd8 Kh7 27. Re7 Qxa2 28. Nf7 Kg8 29. g4 Qxb3 30. g5 hxg5 31. Nxg5 b5 32. Ne6 Bh6 33. Nf4 Bxf4 34. Rxa7 Qb4 35. Ree7 Bd6 36. Rg7+ Kf8 37. Ra8+ Ne8 38. Raa7 Qc5 39. Rh7 1-0&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0mopdcl1frq4tj14sieo50ku9ldi].[none:Moves:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[max:MyElo:qk]' field-type='quantitative' max='1950' min='1200' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[__tableau_internal_object_id__].[cnt:csvData_606AA56BD6C84E788BE5FDE1ED3219C3:qk]' field-type='quantitative' fold='true' max='130' min='0' range-type='fixed' scope='rows' type='space' />
+            <format attr='height' field='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[tdy:Date:qk]' value='65' />
+            <encoding attr='space' class='0' field='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[tdy:Date:qk]' field-type='quantitative' max='#2021-08-01 02:53:38#' min='#2019-12-25 00:00:00#' range-type='fixed' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[tdy:Date:qk]' scope='cols' value='Fecha' />
+            <format attr='title' class='0' field='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[__tableau_internal_object_id__].[cnt:csvData_606AA56BD6C84E788BE5FDE1ED3219C3:qk]' scope='rows' value='Partidas jugadas' />
+            <format attr='title' class='0' field='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[max:MyElo:qk]' scope='rows' value='Maximo ELO alcanzado' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[max:MyElo:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#ae123a</color>
+                <color>#bf193b</color>
+                <color>#ce253d</color>
+                <color>#dc3440</color>
+                <color>#e74545</color>
+                <color>#ef574c</color>
+                <color>#f46956</color>
+                <color>#f77c66</color>
+                <color>#fa8d75</color>
+                <color>#fc9c89</color>
+                <color>#feac9d</color>
+                <color>#ced7c3</color>
+                <color>#c6d2ca</color>
+                <color>#b3ccbc</color>
+                <color>#a2c5ae</color>
+                <color>#91bfa1</color>
+                <color>#81b995</color>
+                <color>#72b289</color>
+                <color>#64ac7d</color>
+                <color>#56a672</color>
+                <color>#499f67</color>
+                <color>#3d995d</color>
+                <color>#329354</color>
+              </color-palette>
+            </encoding>
+            <encoding attr='color' field='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[usr:Calculation_1593429909070802946:qk]' num-steps='10' palette='blue_teal_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='line-interpolation' value='linear' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-mode' value='selection' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[__tableau_internal_object_id__].[cnt:csvData_606AA56BD6C84E788BE5FDE1ED3219C3:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[usr:Calculation_1593429909070802946:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Fecha:&#9;&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0mopdcl1frq4tj14sieo50ku9ldi].[tdy:Date:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Partidas:&#9;&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0mopdcl1frq4tj14sieo50ku9ldi].[__tableau_internal_object_id__].[cnt:csvData_606AA56BD6C84E788BE5FDE1ED3219C3:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Ratio:&#9;</run>
+                <run bold='true'><![CDATA[	<[federated.0mopdcl1frq4tj14sieo50ku9ldi].[usr:Calculation_1593429909070802946:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='line-interpolation' value='linear' />
+                <format attr='size' value='0.70265191793441772' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-mode' value='selection' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[max:MyElo:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[max:MyElo:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Fecha:&#9;&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0mopdcl1frq4tj14sieo50ku9ldi].[tdy:Date:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'><![CDATA[ELO:		<[federated.0mopdcl1frq4tj14sieo50ku9ldi].[max:MyElo:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.62569057941436768' />
+                <format attr='line-interpolation' value='linear' />
+                <format attr='mark-markers-mode' value='all' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-mode' value='selection' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0mopdcl1frq4tj14sieo50ku9ldi].[max:MyElo:qk] + [federated.0mopdcl1frq4tj14sieo50ku9ldi].[__tableau_internal_object_id__].[cnt:csvData_606AA56BD6C84E788BE5FDE1ED3219C3:qk])</rows>
+        <cols>[federated.0mopdcl1frq4tj14sieo50ku9ldi].[tdy:Date:qk]</cols>
+      </table>
+      <simple-id uuid='{E9795D03-2E2F-42AE-AAB4-4B56083644DD}' />
+    </worksheet>
+    <worksheet name='Ratio vs Rating opo'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Æ   </run>
+            <run bold='true' fontsize='16'>Ratio de victorias vs puntaje del oponente</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='basic-csv-wdc.herokuapp.com' name='federated.0mopdcl1frq4tj14sieo50ku9ldi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0mopdcl1frq4tj14sieo50ku9ldi'>
+            <column caption='Win Ratio' datatype='real' default-format='p0.00%' name='[Calculation_1593429909070802946]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_1593429909073498115]/COUNT([__tableau_internal_object_id__].[csvData_606AA56BD6C84E788BE5FDE1ED3219C3])' />
+            </column>
+            <column caption='Wins' datatype='integer' name='[Calculation_1593429909073498115]' role='measure' type='ordinal'>
+              <calculation class='tableau' formula='COUNT(IF  [MyResult (copy)_1593429909069942785] = &quot;Win&quot; THEN  [Site] END)' />
+            </column>
+            <column datatype='string' name='[Moves]' role='dimension' type='nominal' />
+            <column aggregation='None' caption='Puntaje ELO del oponente' datatype='integer' name='[MyOpponentsElo (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='1' formula='[MyOpponentsElo]' peg='0' size='15' />
+            </column>
+            <column datatype='integer' name='[MyOpponentsElo]' role='measure' type='quantitative' />
+            <column aggregation='CountD' caption='MyResult (dim)' datatype='string' name='[MyResult (copy)_1593429909069942785]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[MyResult]' />
+            </column>
+            <column aggregation='CountD' datatype='string' default-role='measure' default-type='quantitative' name='[MyResult]' role='dimension' type='nominal' />
+            <column aggregation='CountD' datatype='string' default-role='measure' default-type='quantitative' name='[Site]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='CSV Data' datatype='integer' name='[__tableau_internal_object_id__].[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:csvData_606AA56BD6C84E788BE5FDE1ED3219C3:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='CSV Data' datatype='table' name='[__tableau_internal_object_id__].[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]' role='measure' type='quantitative' />
+            <column-instance column='[Moves]' derivation='None' name='[none:Moves:nk]' pivot='key' type='nominal' />
+            <column-instance column='[MyOpponentsElo (bin)]' derivation='None' name='[none:MyOpponentsElo (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_1593429909070802946]' derivation='User' name='[usr:Calculation_1593429909070802946:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0mopdcl1frq4tj14sieo50ku9ldi].[__tableau_internal_object_id__].[cnt:csvData_606AA56BD6C84E788BE5FDE1ED3219C3:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0mopdcl1frq4tj14sieo50ku9ldi].[usr:Calculation_1593429909070802946:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[__tableau_internal_object_id__].[cnt:csvData_606AA56BD6C84E788BE5FDE1ED3219C3:qk]' included-values='in-range'>
+            <min>20</min>
+            <max>432</max>
+          </filter>
+          <filter class='categorical' column='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[none:Moves:nk]'>
+            <groupfilter from='&quot;1. a3 d5 2. c4 e6 3. e3 dxc4 4. Bxc4 Nf6 5. Nc3 Be7 6. Ba2 O-O 7. b3 Nc6 8. Bb2 Bd7 9. Qc2 Re8 10. Bb1 g6 11. Nce2 a5 12. Qc3 b5 13. g4 b4 14. axb4 axb4 15. Qc4 Rxa1 16. Bxa1 Na5 17. Qc2 Bb5 18. Qb2 Qd5 19. g5 Qxg5 20. Nf3 Qg4 21. Ne5 Qg5 22. Rg1 Qh5 23. Rg2 Qxe2\# 0-1&quot;' function='range' level='[none:Moves:nk]' to='&quot;1. Nf3 Nf6 2. g3 d6 3. Bg2 e5 4. O-O Be7 5. e4 O-O 6. d3 Be6 7. c3 Nbd7 8. b3 c6 9. Bb2 Qc7 10. Nbd2 Rfe8 11. c4 Bf8 12. Rb1 g6 13. Re1 Bg7 14. Qe2 Rad8 15. d4 exd4 16. Nxd4 d5 17. Nxe6 fxe6 18. exd5 exd5 19. cxd5 Rxe2 20. Rxe2 cxd5 21. Rbe1 Qc2 22. Bxf6 Nxf6 23. Nf3 Qc5 24. Ng5 h6 25. Ne6 Qa3 26. Nxd8 Kh7 27. Re7 Qxa2 28. Nf7 Kg8 29. g4 Qxb3 30. g5 hxg5 31. Nxg5 b5 32. Ne6 Bh6 33. Nf4 Bxf4 34. Rxa7 Qb4 35. Ree7 Bd6 36. Rg7+ Kf8 37. Ra8+ Ne8 38. Raa7 Qc5 39. Rh7 1-0&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0mopdcl1frq4tj14sieo50ku9ldi].[:Measure Names]</column>
+            <column>[federated.0mopdcl1frq4tj14sieo50ku9ldi].[__tableau_internal_object_id__].[cnt:csvData_606AA56BD6C84E788BE5FDE1ED3219C3:qk]</column>
+            <column>[federated.0mopdcl1frq4tj14sieo50ku9ldi].[none:Moves:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[usr:Calculation_1593429909070802946:qk]' field-type='quantitative' max='0.57134703196347025' min='0.2' range-type='fixed' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[usr:Calculation_1593429909070802946:qk]' scope='rows' value='Ratio de victorias' />
+            <format attr='title' class='0' field='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[__tableau_internal_object_id__].[cnt:csvData_606AA56BD6C84E788BE5FDE1ED3219C3:qk]' scope='rows' value='Partidas jugadas' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[usr:Calculation_1593429909070802946:qk]' num-steps='13' palette='red_green_diverging_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[none:MyOpponentsElo (bin):ok]' value='Puntaje ELO del oponente'>
+              <formatted-text>
+                <run>Puntaje ELO del oponente</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='line-interpolation' value='linear' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[usr:Calculation_1593429909070802946:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[usr:Calculation_1593429909070802946:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Puntaje ELO del oponente:&#9;&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0mopdcl1frq4tj14sieo50ku9ldi].[none:MyOpponentsElo (bin):ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Partidas jugadas:&#9;&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0mopdcl1frq4tj14sieo50ku9ldi].[__tableau_internal_object_id__].[cnt:csvData_606AA56BD6C84E788BE5FDE1ED3219C3:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Ratio de victorias:&#9;&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0mopdcl1frq4tj14sieo50ku9ldi].[usr:Calculation_1593429909070802946:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.1974033117294312' />
+                <format attr='mark-markers-mode' value='all' />
+                <format attr='mark-transparency' value='247' />
+                <format attr='line-interpolation' value='linear' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[__tableau_internal_object_id__].[cnt:csvData_606AA56BD6C84E788BE5FDE1ED3219C3:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[none:MyOpponentsElo (bin):ok]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Puntaje ELO del oponente:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0mopdcl1frq4tj14sieo50ku9ldi].[none:MyOpponentsElo (bin):ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Partidas jugadas:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0mopdcl1frq4tj14sieo50ku9ldi].[__tableau_internal_object_id__].[cnt:csvData_606AA56BD6C84E788BE5FDE1ED3219C3:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='line-interpolation' value='linear' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0mopdcl1frq4tj14sieo50ku9ldi].[usr:Calculation_1593429909070802946:qk] + [federated.0mopdcl1frq4tj14sieo50ku9ldi].[__tableau_internal_object_id__].[cnt:csvData_606AA56BD6C84E788BE5FDE1ED3219C3:qk])</rows>
+        <cols>[federated.0mopdcl1frq4tj14sieo50ku9ldi].[none:MyOpponentsElo (bin):ok]</cols>
+      </table>
+      <simple-id uuid='{D310E431-E3F8-4600-954D-8FDD95A4A58D}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='basic-csv-wdc.herokuapp.com' name='federated.0mopdcl1frq4tj14sieo50ku9ldi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0mopdcl1frq4tj14sieo50ku9ldi'>
+            <column datatype='string' name='[Black]' role='dimension' type='nominal' />
+            <column caption='ImPlayingWith' datatype='string' name='[Calculation_1593429909127667726]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF ([Black] = &quot;OzymandiasS&quot;) THEN  &quot;Black&quot;&#13;&#10;ElSE  &quot;White&quot; END' />
+            </column>
+            <column datatype='string' name='[Moves]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='CSV Data' datatype='integer' name='[__tableau_internal_object_id__].[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:csvData_606AA56BD6C84E788BE5FDE1ED3219C3:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='CSV Data' datatype='table' name='[__tableau_internal_object_id__].[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1593429909127667726]' derivation='None' name='[none:Calculation_1593429909127667726:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Moves]' derivation='None' name='[none:Moves:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[none:Moves:nk]'>
+            <groupfilter from='&quot;1. a3 d5 2. c4 e6 3. e3 dxc4 4. Bxc4 Nf6 5. Nc3 Be7 6. Ba2 O-O 7. b3 Nc6 8. Bb2 Bd7 9. Qc2 Re8 10. Bb1 g6 11. Nce2 a5 12. Qc3 b5 13. g4 b4 14. axb4 axb4 15. Qc4 Rxa1 16. Bxa1 Na5 17. Qc2 Bb5 18. Qb2 Qd5 19. g5 Qxg5 20. Nf3 Qg4 21. Ne5 Qg5 22. Rg1 Qh5 23. Rg2 Qxe2\# 0-1&quot;' function='range' level='[none:Moves:nk]' to='&quot;1. Nf3 Nf6 2. g3 d6 3. Bg2 e5 4. O-O Be7 5. e4 O-O 6. d3 Be6 7. c3 Nbd7 8. b3 c6 9. Bb2 Qc7 10. Nbd2 Rfe8 11. c4 Bf8 12. Rb1 g6 13. Re1 Bg7 14. Qe2 Rad8 15. d4 exd4 16. Nxd4 d5 17. Nxe6 fxe6 18. exd5 exd5 19. cxd5 Rxe2 20. Rxe2 cxd5 21. Rbe1 Qc2 22. Bxf6 Nxf6 23. Nf3 Qc5 24. Ng5 h6 25. Ne6 Qa3 26. Nxd8 Kh7 27. Re7 Qxa2 28. Nf7 Kg8 29. g4 Qxb3 30. g5 hxg5 31. Nxg5 b5 32. Ne6 Bh6 33. Nf4 Bxf4 34. Rxa7 Qb4 35. Ree7 Bd6 36. Rg7+ Kf8 37. Ra8+ Ne8 38. Raa7 Qc5 39. Rh7 1-0&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0mopdcl1frq4tj14sieo50ku9ldi].[none:Moves:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[none:Calculation_1593429909127667726:nk]' />
+              <wedge-size column='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[__tableau_internal_object_id__].[cnt:csvData_606AA56BD6C84E788BE5FDE1ED3219C3:qk]' />
+              <size column='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[__tableau_internal_object_id__].[cnt:csvData_606AA56BD6C84E788BE5FDE1ED3219C3:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.5052486658096313' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{B4173BF8-7624-40C2-915F-CF6C7DAE578F}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='basic-csv-wdc.herokuapp.com' name='federated.0mopdcl1frq4tj14sieo50ku9ldi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0mopdcl1frq4tj14sieo50ku9ldi'>
+            <column datatype='string' name='[Black]' role='dimension' type='nominal' />
+            <column caption='ImPlayingWith' datatype='string' name='[Calculation_1593429909127667726]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF ([Black] = &quot;OzymandiasS&quot;) THEN  &quot;Black&quot;&#13;&#10;ElSE  &quot;White&quot; END' />
+            </column>
+            <column datatype='string' name='[Moves]' role='dimension' type='nominal' />
+            <column datatype='string' name='[MyFirstMove]' role='dimension' type='nominal' />
+            <column aggregation='CountD' caption='MyResult (dim)' datatype='string' name='[MyResult (copy)_1593429909069942785]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[MyResult]' />
+            </column>
+            <column aggregation='CountD' datatype='string' default-role='measure' default-type='quantitative' name='[MyResult]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='CSV Data' datatype='integer' name='[__tableau_internal_object_id__].[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:csvData_606AA56BD6C84E788BE5FDE1ED3219C3:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='CSV Data' datatype='table' name='[__tableau_internal_object_id__].[csvData_606AA56BD6C84E788BE5FDE1ED3219C3]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1593429909127667726]' derivation='None' name='[none:Calculation_1593429909127667726:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Moves]' derivation='None' name='[none:Moves:nk]' pivot='key' type='nominal' />
+            <column-instance column='[MyFirstMove]' derivation='None' name='[none:MyFirstMove:nk]' pivot='key' type='nominal' />
+            <column-instance column='[MyResult (copy)_1593429909069942785]' derivation='None' name='[none:MyResult (copy)_1593429909069942785:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[__tableau_internal_object_id__].[cnt:csvData_606AA56BD6C84E788BE5FDE1ED3219C3:qk]' included-values='in-range'>
+            <min>20</min>
+          </filter>
+          <manual-sort column='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[none:Calculation_1593429909127667726:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;White&quot;</bucket>
+              <bucket>&quot;Black&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[none:Moves:nk]'>
+            <groupfilter from='&quot;1. a3 d5 2. c4 e6 3. e3 dxc4 4. Bxc4 Nf6 5. Nc3 Be7 6. Ba2 O-O 7. b3 Nc6 8. Bb2 Bd7 9. Qc2 Re8 10. Bb1 g6 11. Nce2 a5 12. Qc3 b5 13. g4 b4 14. axb4 axb4 15. Qc4 Rxa1 16. Bxa1 Na5 17. Qc2 Bb5 18. Qb2 Qd5 19. g5 Qxg5 20. Nf3 Qg4 21. Ne5 Qg5 22. Rg1 Qh5 23. Rg2 Qxe2\# 0-1&quot;' function='range' level='[none:Moves:nk]' to='&quot;1. Nf3 Nf6 2. g3 d6 3. Bg2 e5 4. O-O Be7 5. e4 O-O 6. d3 Be6 7. c3 Nbd7 8. b3 c6 9. Bb2 Qc7 10. Nbd2 Rfe8 11. c4 Bf8 12. Rb1 g6 13. Re1 Bg7 14. Qe2 Rad8 15. d4 exd4 16. Nxd4 d5 17. Nxe6 fxe6 18. exd5 exd5 19. cxd5 Rxe2 20. Rxe2 cxd5 21. Rbe1 Qc2 22. Bxf6 Nxf6 23. Nf3 Qc5 24. Ng5 h6 25. Ne6 Qa3 26. Nxd8 Kh7 27. Re7 Qxa2 28. Nf7 Kg8 29. g4 Qxb3 30. g5 hxg5 31. Nxg5 b5 32. Ne6 Bh6 33. Nf4 Bxf4 34. Rxa7 Qb4 35. Ree7 Bd6 36. Rg7+ Kf8 37. Ra8+ Ne8 38. Raa7 Qc5 39. Rh7 1-0&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0mopdcl1frq4tj14sieo50ku9ldi].[none:Moves:nk]</column>
+            <column>[federated.0mopdcl1frq4tj14sieo50ku9ldi].[__tableau_internal_object_id__].[cnt:csvData_606AA56BD6C84E788BE5FDE1ED3219C3:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[none:MyResult (copy)_1593429909069942785:nk]' />
+              <wedge-size column='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[__tableau_internal_object_id__].[cnt:csvData_606AA56BD6C84E788BE5FDE1ED3219C3:qk]' />
+              <size column='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[__tableau_internal_object_id__].[cnt:csvData_606AA56BD6C84E788BE5FDE1ED3219C3:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols>([federated.0mopdcl1frq4tj14sieo50ku9ldi].[none:Calculation_1593429909127667726:nk] / [federated.0mopdcl1frq4tj14sieo50ku9ldi].[none:MyFirstMove:nk])</cols>
+      </table>
+      <simple-id uuid='{0F911041-C529-4BC6-B548-F66DDE8A4188}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='LichessDashboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Analsis de partidas de Lichess  2020 - 2021</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='2400' maxwidth='800' minheight='2400' minwidth='800' preset-index='4' sizing-mode='fixed' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='99334' id='36' param='horz' w='98000' x='1000' y='333'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='99334' id='33' param='horz' w='98000' x='1000' y='333'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='99334' id='30' param='horz' w='98000' x='1000' y='333'>
+                <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='99334' id='26' param='horz' w='98000' x='1000' y='333'>
+                  <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='99334' id='24' w='98000' x='1000' y='333'>
+                    <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='31709' id='19' param='horz' w='98000' x='1000' y='333'>
+                      <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='31709' id='12' param='vert' w='98000' x='1000' y='333'>
+                        <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='2083' id='13' w='98000' x='1000' y='333'>
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='none' />
+                            <format attr='border-width' value='0' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                        <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='29626' id='7' param='horz' w='98000' x='1000' y='2416'>
+                          <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='29626' id='5' w='98000' x='1000' y='2416'>
+                            <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='29626' id='14' param='vert' w='98000' x='1000' y='2416'>
+                              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' fixed-size='701' h='29208' id='15' is-fixed='true' param='vert' w='98000' x='1000' y='2416'>
+                                <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='29166' id='16' param='vert' w='98000' x='1000' y='2416'>
+                                  <zone fixed-size='692' h='29166' id='17' is-fixed='true' name='Freq y rating' w='98000' x='1000' y='2416'>
+                                    <layout-cache minheight='218' type-h='scalable' type-w='fixed' />
+                                    <zone-style>
+                                      <format attr='border-color' value='#000000' />
+                                      <format attr='border-style' value='none' />
+                                      <format attr='border-width' value='0' />
+                                      <format attr='margin' value='4' />
+                                    </zone-style>
+                                  </zone>
+                                </zone>
+                              </zone>
+                            </zone>
+                          </zone>
+                        </zone>
+                      </zone>
+                    </zone>
+                    <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='67625' id='21' param='vert' w='98000' x='1000' y='32042'>
+                      <zone fixed-size='432' h='18333' id='23' is-fixed='true' name='Ratio vs Rating opo' w='98000' x='1000' y='32042'>
+                        <layout-cache minheight='333' type-h='scalable' type-w='fixed' />
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='48416' id='27' param='vert' w='98000' x='1000' y='50375'>
+                        <zone fixed-size='553' h='23375' id='31' is-fixed='true' name='Dist. semanal' w='98000' x='1000' y='50375'>
+                          <layout-cache type-h='fixed' type-w='fixed' />
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='none' />
+                            <format attr='border-width' value='0' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                        <zone fixed-size='593' h='25041' id='34' is-fixed='true' name='Aperturas &amp; ratio' w='98000' x='1000' y='73750'>
+                          <layout-cache minheight='152' type-h='scalable' type-w='fixed' />
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='none' />
+                            <format attr='border-width' value='0' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                      </zone>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='2' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='84000' id='1' param='vert' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{262238F3-144E-4ADB-BB2E-2DB2B960D949}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Freq y rating'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[usr:Calculation_1593429909070802946:qk]' type='color' />
+            <card pane-specification-id='2' param='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[max:MyElo:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{97482B6E-D77A-4E08-8A7D-0AD51CF4C4B7}' />
+    </window>
+    <window class='worksheet' name='Dist. semanal'>
+      <cards>
+        <edge name='left'>
+          <strip size='300'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[usr:Calculation_1593429909142822927:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2446613A-5E75-4C09-9A74-91AA7D028228}' />
+    </window>
+    <window class='worksheet' name='Ratio vs Rating opo'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[none:MyOpponentsElo (bin):ok]' type='color' />
+            <card pane-specification-id='1' param='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[usr:Calculation_1593429909070802946:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{86CC5C64-AD34-458E-9DF6-C0E8D9BC926D}' />
+    </window>
+    <window class='worksheet' name='Aperturas &amp; ratio'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[none:Calculation_1593429909127667726:nk]&#10;[federated.0mopdcl1frq4tj14sieo50ku9ldi].[none:MyResult (copy)_1593429909069942785:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[__tableau_internal_object_id__].[cnt:csvData_606AA56BD6C84E788BE5FDE1ED3219C3:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{E92D32F8-05BD-4996-8CD1-E00CA783D313}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[none:Calculation_1593429909127667726:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[__tableau_internal_object_id__].[cnt:csvData_606AA56BD6C84E788BE5FDE1ED3219C3:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9575A12F-C849-44BF-B8BB-D8D3A3484D28}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[none:MyResult (copy)_1593429909069942785:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0mopdcl1frq4tj14sieo50ku9ldi].[__tableau_internal_object_id__].[cnt:csvData_606AA56BD6C84E788BE5FDE1ED3219C3:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{610F8C3D-4C9B-40E8-9866-E56336C49570}' />
+    </window>
+    <window class='dashboard' maximized='true' name='LichessDashboard'>
+      <viewpoints>
+        <viewpoint name='Aperturas &amp; ratio'>
+          <zoom type='entire-view' />
+          <floating-toolbar-visibility value='2' />
+          <default-map-tool-selection tool='1' />
+        </viewpoint>
+        <viewpoint name='Dist. semanal' />
+        <viewpoint name='Freq y rating'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Ratio vs Rating opo'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='34' />
+      <simple-id uuid='{FE774449-0733-4C21-8C10-D0B33D0F5895}' />
+    </window>
+  </windows>
+</workbook>
