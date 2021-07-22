@@ -1,3 +1,6 @@
 Tarea 1: leer el paper "Tour Through the Visualization Zoo" y marcar las palabras que no conocemos. Hay que guardar esa info en un txt y lo tenemos que meter en una URL que luego debera ser cargada en la Spreadsheet. Deadline? proxima clase?
 
 
+Calificaciones del Tp de datos personales:
+
+
