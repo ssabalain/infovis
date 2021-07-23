@@ -3,4 +3,23 @@ Tarea 1: leer el paper "Tour Through the Visualization Zoo" y marcar las palabra
 
 Calificaciones del Tp de datos personales:
 
+Alumno,Calificacion
+Ariel Belossi,1
+Fernando Masia,3
+Ana Vanessa Proaño Morales,2
+Patricio Garbino,3
+Marcos Mel,2
+Juan Priolo,2
+Agustin Raul Genoud,1
+Victoria Cornejo,2
+Nicolas Marcantonio,2
+Leydi Nathaly Ramos Macías,3
+Roberto Perez,3
+Lucas Gonzalo Serrenho Pfefferkorn,3
+Alvaro Vanina,2
+Jose Angel Ramon Jimenez Ruiz,2
+Francisco Striebeck,3
+Ignacio Luciano Caro Solis,1
+Karina Andrea Drisaldi,1
+
 
