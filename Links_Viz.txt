@@ -7,3 +7,5 @@ https://ssabalain.github.io/infovis/deptos_censo_viz.html
 #Trabajo practico de datos personales, usando Tableau
 https://ssabalain.github.io/infovis/Visualizations/Lichess.html
 
+
+HOLA PULGUI
